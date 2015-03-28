@@ -1,0 +1,9 @@
+IPlot - Interactive plotting tools for Octave
+
+(C) Daniel Wagenaar, 2015. By downloading this software you agree to the terms of the GNU General Public License, version 3. The full text of this license is included in the project package.
+
+Octave implements the vast majority of the Matlab language for scientific computing. One area where Octave is still lagging, is in the area of interactivity. The Mathworks' Matlab offers functions like UICONTROL and handle graphics properties such as BUTTONDOWNFCN, but these are not yet implemented in Octave. IPlot offers a viable stop-gap solution. It does not directly implement UICONTROL or BUTTONDOWNFCN for Octave's native graphics system, but instead provides a collection of functions like IFIGURE, IPLOT, IPATCH, ISET, IGET, etc., that mimic the analogous native functions. These functions are not intended to produce publication quality graphics (for that, see my other product QPlot at http://www.danielwagenaar.net/qplot), but primarily for direct user interaction. The IPlot package implements BUTTONDOWNFCN and related callbacks on all of its graphics objects, and has an IBUTTON function that is similar to UICONTROL. As such, it represents an easy to use system for implementing basic graphical user interfaces in Octave.
+
+Development is ongoing and code contributions and suggestions are welcome.
+
+- Daniel Wagenaar <wagenadl@uc.edu>
